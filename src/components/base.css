@@ -109,3 +109,14 @@ body,
 .b3-switch:checked::after {
   background-color: var(--ctp-mocha-base) !important;
 }
+
+/* Message/Notification popups */
+.b3-snackbars {
+  color: var(--ctp-mocha-text) !important;
+}
+
+.b3-snackbar__content {
+  background-color: var(--ctp-mocha-surface0) !important;
+  color: var(--ctp-mocha-text) !important;
+  border: 1px solid var(--ctp-mocha-surface1) !important;
+}
