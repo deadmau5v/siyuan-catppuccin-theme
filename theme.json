@@ -1,7 +1,7 @@
 {
   "name": "Catppuccin",
   "author": "deadmau5v",
-  "url": "https://github.com/catppuccin/siyuan",
-  "version": "1.0.0",
+  "url": "https://github.com/deadmau5v/siyuan-themes-catppuccin",
+  "version": "0.0.2",
   "modes": ["dark", "light"]
 }

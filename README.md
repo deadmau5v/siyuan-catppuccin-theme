@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/deadmau5v/siyuan-catppuccin-theme/stargazers"><img src="https://img.shields.io/github/stars/deadmau5v/siyuan-catppuccin-theme?colorA=363a4f&colorB=b7bdf8&style=for-the-badge" alt="GitHub star count"></a>
-    <a href="https://github.com/deadmau5v/siyuan-catppuccin-theme/issues"><img src="https://img.shields.io/github/issues/deadmau5v/siyuan-catppuccin-theme?colorA=363a4f&colorB=f5a97f&style=for-the-badge" alt="Open issues on GitHub"></a>
-    <a href="https://github.com/deadmau5v/siyuan-catppuccin-theme/contributors"><img src="https://img.shields.io/github/contributors/deadmau5v/siyuan-catppuccin-theme?colorA=363a4f&colorB=a6da95&style=for-the-badge" alt="List of contributors"></a>
+    <a href="https://github.com/deadmau5v/siyuan-themes-catppuccin/stargazers"><img src="https://img.shields.io/github/stars/deadmau5v/siyuan-themes-catppuccin?colorA=363a4f&colorB=b7bdf8&style=for-the-badge" alt="GitHub star count"></a>
+    <a href="https://github.com/deadmau5v/siyuan-themes-catppuccin/issues"><img src="https://img.shields.io/github/issues/deadmau5v/siyuan-themes-catppuccin?colorA=363a4f&colorB=f5a97f&style=for-the-badge" alt="Open issues on GitHub"></a>
+    <a href="https://github.com/deadmau5v/siyuan-themes-catppuccin/contributors"><img src="https://img.shields.io/github/contributors/deadmau5v/siyuan-themes-catppuccin?colorA=363a4f&colorB=a6da95&style=for-the-badge" alt="List of contributors"></a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ This theme provides Catppuccin Latte and Mocha flavors for SiYuan Note, a privac
 
 ### Manual Installation
 
-1. Download the latest release from the [releases page](https://github.com/deadmau5v/siyuan-catppuccin-theme/releases).
+1. Download the latest release from the [releases page](https://github.com/deadmau5v/siyuan-themes-catppuccin/releases).
 2. Extract the downloaded archive.
 3. In SiYuan, go to `Settings` >> `Appearance` >> `Theme`.
 4. Click `Install Theme` and select the extracted theme folder.
@@ -64,7 +64,7 @@ The theme follows SiYuan's CSS variables system, making it easy to customize col
 
 ## Problems?
 
-SiYuan is a powerful and flexible application with various plugins and use cases. If you run into theme-related issues or want CSS adjustments made for your favorite plugins, please [open an issue](https://github.com/deadmau5v/siyuan-catppuccin-theme/issues).
+SiYuan is a powerful and flexible application with various plugins and use cases. If you run into theme-related issues or want CSS adjustments made for your favorite plugins, please [open an issue](https://github.com/deadmau5v/siyuan-themes-catppuccin/issues).
 
 ## Contributing
 
@@ -72,7 +72,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Development
 
-See the [Releases](https://github.com/deadmau5v/siyuan-catppuccin-theme/releases) page for the latest news.
+See the [Releases](https://github.com/deadmau5v/siyuan-themes-catppuccin/releases) page for the latest news.
 
 ## 💝 Thanks to
 
@@ -84,4 +84,4 @@ See the [Releases](https://github.com/deadmau5v/siyuan-catppuccin-theme/releases
 
 <p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" alt="Cat sitting on gray line"/></p>
 <p align="center">Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
-<p align="center"><a href="https://github.com/deadmau5v/siyuan-catppuccin-theme/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8" alt="MIT license"/></a></p>
+<p align="center"><a href="https://github.com/deadmau5v/siyuan-themes-catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8" alt="MIT license"/></a></p>

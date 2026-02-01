@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deadmau5v/siyuan-catppuccin-theme.git"
+    "url": "git+https://github.com/deadmau5v/siyuan-themes-catppuccin.git"
   },
   "keywords": [
     "siyuan",
@@ -21,9 +21,9 @@
   "author": "deadmau5v",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deadmau5v/siyuan-catppuccin-theme/issues"
+    "url": "https://github.com/deadmau5v/siyuan-themes-catppuccin/issues"
   },
-  "homepage": "https://github.com/deadmau5v/siyuan-catppuccin-theme#readme",
+  "homepage": "https://github.com/deadmau5v/siyuan-themes-catppuccin#readme",
   "devDependencies": {
     "stylelint": "^16.10.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
