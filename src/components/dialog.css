@@ -1,0 +1,34 @@
+/* SiYuan Dialog & Menu Styles - Floating/Innermost (Lightest) */
+
+.b3-snackbar__content,
+.b3-dialog__container,
+.b3-menu {
+  background-color: var(--ctp-mocha-surface0);
+  color: var(--ctp-mocha-text);
+  border: 1px solid var(--ctp-mocha-surface1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.b3-dialog__body .block__icons,
+.b3-dialog__body .search__tip {
+  background-color: var(--ctp-mocha-crust);
+}
+
+.b3-dialog__body .search__list,
+#criteria {
+  background-color: var(--ctp-mocha-mantle);
+}
+
+/* Dialog content sidebar - step darker than main dialog content */
+.b3-dialog__content > .b3-list {
+  background-color: var(--ctp-mocha-mantle);
+}
+
+/* Light mode overrides */
+[data-theme-mode="light"] .b3-snackbar__content,
+[data-theme-mode="light"] .b3-dialog__container,
+[data-theme-mode="light"] .b3-menu {
+  background-color: var(--ctp-latte-surface0);
+  color: var(--ctp-latte-text);
+  border: 1px solid var(--ctp-latte-surface1);
+}

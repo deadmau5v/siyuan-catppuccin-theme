@@ -1,0 +1,22 @@
+/* SiYuan Toolbar Styles - Outermost layer (Darkest) */
+.toolbar {
+  background-color: var(--ctp-mocha-crust);
+  color: var(--ctp-mocha-text);
+  border: none; /* Remove bottom border */
+  box-shadow: none;
+}
+
+.toolbar__item {
+  color: var(--ctp-mocha-subtext0);
+}
+
+.toolbar__item:hover {
+  background-color: var(--ctp-mocha-surface0);
+  color: var(--ctp-mocha-text);
+}
+
+/* Light mode overrides */
+[data-theme-mode="light"] .toolbar {
+  background-color: var(--ctp-latte-crust);
+  border: none;
+}

@@ -1,0 +1,13 @@
+/* SiYuan Status Bar Styles - Outermost layer (Darkest) */
+.status {
+  background-color: var(--ctp-mocha-crust);
+  color: var(--ctp-mocha-subtext0);
+  border: none; /* Remove top border */
+  box-shadow: none;
+}
+
+/* Light mode overrides */
+[data-theme-mode="light"] .status {
+  background-color: var(--ctp-latte-crust);
+  border: none;
+}

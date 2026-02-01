@@ -1,0 +1,87 @@
+/* SiYuan Layout & Editor Styles - 'Inner is Lighter' Optimization */
+
+/* Global: Remove all borders from layout containers */
+.layout__dockl,
+.layout__dockr,
+.layout__dockb,
+.layout__center,
+.layout-tab-bar,
+.layout-tab-container,
+#dockLeft,
+#dockRight {
+  border: none !important;
+  box-shadow: none;
+}
+
+/* Hide resize handle lines but keep them functional */
+.layout__resize {
+  background-color: transparent;
+}
+
+.layout__resize::after {
+  background-color: transparent;
+}
+
+.layout__resize:hover::after {
+  background-color: var(--ctp-mocha-surface0);
+}
+
+/* Outermost Background: Area behind the tabs */
+.layout__center {
+  background-color: var(--ctp-mocha-mantle);
+}
+
+/* 1. Outermost Framework (Darkest - Crust) */
+#dockLeft,
+#dockRight,
+.layout__dockb {
+  background-color: var(--ctp-mocha-crust);
+}
+
+/* 2. Secondary Layer (Darker - Mantle) */
+.layout__dockl,
+.layout__dockr,
+.file-tree,
+.layout-tab-container {
+  background-color: var(--ctp-mocha-mantle);
+}
+
+/* Tab bar transition layer */
+.layout-tab-bar {
+  background-color: var(--ctp-mocha-mantle);
+}
+
+.item--focus::after {
+  top: 0;
+  height: 2px !important;
+}
+
+.layout__wnd--active .layout-tab-bar .item--focus {
+  box-shadow: none !important;
+}
+
+/* Focus state for tabs should be slightly lighter (Surface0) */
+.item--focus {
+  background-color: var(--ctp-mocha-base);
+}
+
+/* 3. Innermost Content Area (Lightest - Base) */
+.protyle-wysiwyg {
+  background-color: var(--ctp-mocha-base);
+}
+
+/* Editor background */
+.protyle-background {
+  background-color: var(--ctp-mocha-base);
+}
+
+/* --- Light Mode Overrides (Latte) --- */
+[data-theme-mode="light"] #dockLeft,
+[data-theme-mode="light"] #dockRight {
+  background-color: var(--ctp-latte-crust);
+}
+
+[data-theme-mode="light"] .layout__dockl,
+[data-theme-mode="light"] .layout__dockr {
+  background-color: var(--ctp-latte-mantle);
+}

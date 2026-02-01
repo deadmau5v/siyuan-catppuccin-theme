@@ -1,6 +1,17 @@
+/* SiYuan Catppuccin Theme - Main Entry */
+
 @import "src/flavors/mocha.css";
 @import "src/flavors/latte.css";
+
+/* Modularized Components */
 @import "src/components/base.css";
+@import "src/components/toolbar.css";
+@import "src/components/layout.css";
+@import "src/components/status.css";
+@import "src/components/dialog.css";
+@import "src/components/mermaid.css";
+@import "src/components/common.css";
+
 @import "src/icons/icons.css";
 
 /* Default to Mocha (dark mode) */
@@ -8,10 +19,10 @@
   color-scheme: dark;
 }
 
-/* Light mode - triggered when [data-theme-mode="light"] is set on body */
+/* Light mode logic handled via body[data-theme-mode="light"] in separate modules */
 [data-theme-mode="light"] {
   color-scheme: light;
-  /* Remap variables to Latte flavor */
+  /* Remap primary variables for Latte */
   --b3-theme-background: var(--ctp-latte-base);
   --b3-theme-surface: var(--ctp-latte-surface0);
   --b3-theme-on-background: var(--ctp-latte-text);
@@ -24,190 +35,4 @@
   --b3-theme-surface-light: var(--ctp-latte-surface2);
   --b3-scroll-color: var(--ctp-latte-surface2);
   --b3-list-hover: var(--ctp-latte-surface1);
-}
-
-/* Light mode: toolbar styling */
-[data-theme-mode="light"] .toolbar {
-  background-color: var(--ctp-latte-crust) !important;
-  color: var(--ctp-latte-text) !important;
-}
-
-[data-theme-mode="light"] .toolbar__item {
-  color: var(--ctp-latte-subtext0) !important;
-}
-
-[data-theme-mode="light"] .toolbar__item:hover {
-  background-color: var(--ctp-latte-surface1) !important;
-  color: var(--ctp-latte-text) !important;
-}
-
-/* Light mode: dock panels styling */
-[data-theme-mode="light"] .layout__dockl,
-[data-theme-mode="light"] .layout__dockr,
-[data-theme-mode="light"] .layout__dockb {
-  background-color: var(--ctp-latte-mantle) !important;
-  border-color: var(--ctp-latte-surface0) !important;
-}
-
-[data-theme-mode="light"] .layout-tab-bar {
-  background-color: var(--ctp-latte-crust) !important;
-}
-
-[data-theme-mode="light"] .item--focus {
-  background-color: var(--ctp-latte-surface0) !important;
-}
-
-/* Light mode: editor background */
-[data-theme-mode="light"] .protyle-background {
-  background-color: var(--ctp-latte-mantle) !important;
-}
-
-[data-theme-mode="light"] .protyle-title {
-  color: var(--ctp-latte-text) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg {
-  background-color: var(--ctp-latte-base) !important;
-  color: var(--ctp-latte-text) !important;
-}
-
-/* Light mode: switch component styling */
-[data-theme-mode="light"] .b3-switch::after {
-  background-color: var(--ctp-latte-base) !important;
-}
-
-[data-theme-mode="light"] .b3-switch:checked::after {
-  background-color: var(--ctp-latte-base) !important;
-}
-
-/* Light mode: Message/Notification popups */
-[data-theme-mode="light"] .b3-snackbars {
-  color: var(--ctp-latte-text) !important;
-}
-
-[data-theme-mode="light"] .b3-snackbar__content {
-  background-color: var(--ctp-latte-surface0) !important;
-  color: var(--ctp-latte-text) !important;
-  border: 1px solid var(--ctp-latte-surface1) !important;
-}
-
-/* Light mode: Mermaid diagram styling */
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] svg {
-  background-color: transparent !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] text,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .label,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node label,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .edgeLabel,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .loopText,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .messageText,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .noteText,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .taskText,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .sectionTitle,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .classText {
-  fill: var(--ctp-latte-text) !important;
-  color: var(--ctp-latte-text) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node rect,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node circle,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node ellipse,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node polygon,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node path,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .cluster rect {
-  fill: var(--ctp-latte-surface0) !important;
-  stroke: var(--ctp-latte-lavender) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .actor {
-  stroke: var(--ctp-latte-lavender) !important;
-  fill: var(--ctp-latte-surface0) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .actor-line {
-  stroke: var(--ctp-latte-overlay0) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .messageLine0,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .messageLine1,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .flowchart-link {
-  stroke: var(--ctp-latte-text) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] #arrowhead,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .arrowheadPath,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .marker.arrowhead,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .marker.main {
-  fill: var(--ctp-latte-text) !important;
-  stroke: var(--ctp-latte-text) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .loopLine {
-  stroke: var(--ctp-latte-lavender) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .labelBox {
-  stroke: var(--ctp-latte-lavender) !important;
-  fill: var(--ctp-latte-surface0) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .note {
-  fill: var(--ctp-latte-yellow) !important;
-  stroke: var(--ctp-latte-peach) !important;
-  fill-opacity: 0.3;
-}
-
-/* Gantt Chart */
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .task {
-  stroke: var(--ctp-latte-surface2) !important;
-  fill: var(--ctp-latte-surface1) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .task0,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .task1,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .task2,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .task3 {
-  fill: var(--ctp-latte-surface1) !important;
-  stroke: var(--ctp-latte-surface2) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active0,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active1,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active2,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active3 {
-  fill: var(--ctp-latte-mauve) !important;
-  stroke: var(--ctp-latte-lavender) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done0,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done1,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done2,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done3 {
-  fill: var(--ctp-latte-green) !important;
-  stroke: var(--ctp-latte-teal) !important;
-  fill-opacity: 0.5;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit0,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit1,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit2,
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit3 {
-  fill: var(--ctp-latte-red) !important;
-  stroke: var(--ctp-latte-maroon) !important;
-}
-
-/* Class Diagram */
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .classBreadcrumb {
-  fill: var(--ctp-latte-mauve) !important;
-}
-
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .edgeTerminals {
-  fill: var(--ctp-latte-text) !important;
-}
-
-/* User Journey */
-[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .face {
-  fill: var(--ctp-latte-yellow) !important;
-  stroke: var(--ctp-latte-peach) !important;
 }

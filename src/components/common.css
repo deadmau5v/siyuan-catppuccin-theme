@@ -1,0 +1,42 @@
+/* SiYuan Global Typography & Common Element Styles */
+
+body,
+.protyle-wysiwyg,
+.b3-list-item,
+.block__logo,
+.b3-list-item__text {
+  font-family: var(--b3-font-family);
+}
+
+/* List items */
+.b3-list-item {
+  box-shadow: none;
+}
+
+/* Tooltips */
+.b3-tooltips {
+  box-shadow: none;
+}
+
+/* Block icons */
+.block__icon {
+  box-shadow: none;
+}
+
+/* Switch component */
+.b3-switch::after {
+  background-color: var(--ctp-mocha-base);
+}
+
+.b3-switch:checked::after {
+  background-color: var(--ctp-mocha-base);
+}
+
+/* Light mode overrides */
+[data-theme-mode="light"] .b3-switch::after {
+  background-color: var(--ctp-latte-base);
+}
+
+[data-theme-mode="light"] .b3-switch:checked::after {
+  background-color: var(--ctp-latte-base);
+}

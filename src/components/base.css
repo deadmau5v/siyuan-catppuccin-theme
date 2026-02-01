@@ -1,6 +1,6 @@
-/* Map SiYuan variables to Catppuccin Mocha colors */
+/* SiYuan Design Tokens Mapping (Catppuccin Mocha) */
 :root {
-  /* Font stack: prioritizing Source Han Sans for CJK characters */
+  /* Font stack */
   --b3-font-family:
     "Source Han Sans", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
 
@@ -9,141 +9,32 @@
   --b3-theme-surface: var(--ctp-mocha-surface0);
   --b3-theme-on-background: var(--ctp-mocha-text);
 
-  /* Primary color: used for main actions and highlights */
+  /* Primary color: highlights */
   --b3-theme-primary: var(--ctp-mocha-mauve);
   --b3-theme-on-primary: var(--ctp-mocha-base);
   --b3-theme-primary-light: rgba(203, 166, 247, 0.5);
   --b3-theme-primary-lighter: rgba(203, 166, 247, 0.2);
 
-  /* Secondary color: used for alternate actions */
+  /* Secondary color */
   --b3-theme-secondary: var(--ctp-mocha-blue);
   --b3-theme-on-secondary: var(--ctp-mocha-base);
 
-  /* Error color: used for destructive actions and errors */
+  /* Error color */
   --b3-theme-error: var(--ctp-mocha-red);
 
-  /* Surface variants: for borders and dividers */
+  /* Surface variants */
   --b3-theme-surface-lighter: var(--ctp-mocha-surface1);
   --b3-theme-surface-light: var(--ctp-mocha-surface2);
 
   /* Scrollbar color */
   --b3-scroll-color: var(--ctp-mocha-surface2);
 
-  /* List and tree structure: hover states */
+  /* List structure */
   --b3-list-hover: var(--ctp-mocha-surface1);
   --b3-list-icon-hover: var(--ctp-mocha-text);
-
-  /* Switch component: checked and unchecked states */
-  --b3-switch-checked-background: var(--ctp-mocha-mauve);
-  --b3-switch-background: var(--ctp-mocha-surface2);
 }
 
-/* Component style overrides: Editor area */
-.protyle-wysiwyg {
-  background-color: var(--b3-theme-background) !important;
-  color: var(--b3-theme-on-background) !important;
-}
-
-/* Component style overrides: Editor background */
-.protyle-background {
-  background-color: var(--ctp-mocha-mantle) !important;
-}
-
-/* Component style overrides: Center panel */
-.layout__center {
-  background-color: var(--b3-theme-background) !important;
-}
-
-/* Component style overrides: Dock panels (left, right, bottom) */
-.layout__dockl,
-.layout__dockr,
-.layout__dockb {
-  background-color: var(--ctp-mocha-mantle) !important;
-}
-
-/* Component style overrides: Toolbar */
-.toolbar {
-  background-color: var(--ctp-mocha-crust) !important;
-  color: var(--ctp-mocha-text) !important;
-}
-
-.toolbar__item {
-  color: var(--ctp-mocha-subtext0) !important;
-}
-
-.toolbar__item:hover {
-  background-color: var(--ctp-mocha-surface1) !important;
-  color: var(--ctp-mocha-text) !important;
-}
-
-/* Flat design: Remove shadows from sidebar and floating panels */
-.layout__dockl,
-.layout__dockr,
-.layout__dockb,
-.layout--float {
-  box-shadow: none !important;
-  border-color: var(--ctp-mocha-surface0) !important;
-}
-
-.layout-tab-bar {
-  background-color: var(--ctp-mocha-crust) !important;
-}
-
-.item--focus {
-  background-color: var(--ctp-mocha-surface0) !important;
-}
-
-/* Flat design: Remove shadows from list items */
-.b3-list-item {
-  box-shadow: none !important;
-}
-
-/* Flat design: Remove shadows from tooltips */
-.b3-tooltips {
-  box-shadow: none !important;
-}
-
-/* Flat design: Remove shadows from block icons */
-.block__icon {
-  box-shadow: none !important;
-}
-
-/* Flat design: Remove shadows from panel containers */
-.layout-tab-container,
-.file-tree {
-  box-shadow: none !important;
-}
-
-/* Typography: Apply Source Han Sans font globally */
-body,
-.protyle-wysiwyg,
-.b3-list-item,
-.block__logo,
-.b3-list-item__text {
-  font-family: var(--b3-font-family) !important;
-}
-
-/* Component style overrides: Switch thumb color */
-.b3-switch::after {
-  background-color: var(--ctp-mocha-base) !important;
-}
-
-.b3-switch:checked::after {
-  background-color: var(--ctp-mocha-base) !important;
-}
-
-/* Message/Notification popups */
-.b3-snackbars {
-  color: var(--ctp-mocha-text) !important;
-}
-
-.b3-snackbar__content {
-  background-color: var(--ctp-mocha-surface0) !important;
-  color: var(--ctp-mocha-text) !important;
-  border: 1px solid var(--ctp-mocha-surface1) !important;
-}
-
-/* Icon styling */
+/* Icon base scaling */
 .protyle-icon {
   height: auto;
 }
@@ -152,124 +43,4 @@ body,
   width: 14px;
   height: 14px;
   padding: 2px;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] svg {
-  background-color: transparent !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] text,
-.protyle-wysiwyg [data-subtype="mermaid"] .label,
-.protyle-wysiwyg [data-subtype="mermaid"] .node label,
-.protyle-wysiwyg [data-subtype="mermaid"] .edgeLabel,
-.protyle-wysiwyg [data-subtype="mermaid"] .loopText,
-.protyle-wysiwyg [data-subtype="mermaid"] .messageText,
-.protyle-wysiwyg [data-subtype="mermaid"] .noteText,
-.protyle-wysiwyg [data-subtype="mermaid"] .taskText,
-.protyle-wysiwyg [data-subtype="mermaid"] .sectionTitle,
-.protyle-wysiwyg [data-subtype="mermaid"] .classText {
-  fill: var(--ctp-mocha-text) !important;
-  color: var(--ctp-mocha-text) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .node rect,
-.protyle-wysiwyg [data-subtype="mermaid"] .node circle,
-.protyle-wysiwyg [data-subtype="mermaid"] .node ellipse,
-.protyle-wysiwyg [data-subtype="mermaid"] .node polygon,
-.protyle-wysiwyg [data-subtype="mermaid"] .node path,
-.protyle-wysiwyg [data-subtype="mermaid"] .cluster rect {
-  fill: var(--ctp-mocha-surface0) !important;
-  stroke: var(--ctp-mocha-lavender) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .actor {
-  stroke: var(--ctp-mocha-lavender) !important;
-  fill: var(--ctp-mocha-surface0) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .actor-line {
-  stroke: var(--ctp-mocha-overlay0) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .messageLine0,
-.protyle-wysiwyg [data-subtype="mermaid"] .messageLine1,
-.protyle-wysiwyg [data-subtype="mermaid"] .flowchart-link {
-  stroke: var(--ctp-mocha-text) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] #arrowhead,
-.protyle-wysiwyg [data-subtype="mermaid"] .arrowheadPath,
-.protyle-wysiwyg [data-subtype="mermaid"] .marker.arrowhead,
-.protyle-wysiwyg [data-subtype="mermaid"] .marker.main {
-  fill: var(--ctp-mocha-text) !important;
-  stroke: var(--ctp-mocha-text) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .loopLine {
-  stroke: var(--ctp-mocha-lavender) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .labelBox {
-  stroke: var(--ctp-mocha-lavender) !important;
-  fill: var(--ctp-mocha-surface0) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .note {
-  fill: var(--ctp-mocha-yellow) !important;
-  stroke: var(--ctp-mocha-peach) !important;
-  fill-opacity: 0.3;
-}
-
-/* Gantt Chart */
-.protyle-wysiwyg [data-subtype="mermaid"] .task {
-  stroke: var(--ctp-mocha-surface2) !important;
-  fill: var(--ctp-mocha-surface1) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .task0,
-.protyle-wysiwyg [data-subtype="mermaid"] .task1,
-.protyle-wysiwyg [data-subtype="mermaid"] .task2,
-.protyle-wysiwyg [data-subtype="mermaid"] .task3 {
-  fill: var(--ctp-mocha-surface1) !important;
-  stroke: var(--ctp-mocha-surface2) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .active0,
-.protyle-wysiwyg [data-subtype="mermaid"] .active1,
-.protyle-wysiwyg [data-subtype="mermaid"] .active2,
-.protyle-wysiwyg [data-subtype="mermaid"] .active3 {
-  fill: var(--ctp-mocha-mauve) !important;
-  stroke: var(--ctp-mocha-lavender) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .done0,
-.protyle-wysiwyg [data-subtype="mermaid"] .done1,
-.protyle-wysiwyg [data-subtype="mermaid"] .done2,
-.protyle-wysiwyg [data-subtype="mermaid"] .done3 {
-  fill: var(--ctp-mocha-green) !important;
-  stroke: var(--ctp-mocha-teal) !important;
-  fill-opacity: 0.5;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .crit0,
-.protyle-wysiwyg [data-subtype="mermaid"] .crit1,
-.protyle-wysiwyg [data-subtype="mermaid"] .crit2,
-.protyle-wysiwyg [data-subtype="mermaid"] .crit3 {
-  fill: var(--ctp-mocha-red) !important;
-  stroke: var(--ctp-mocha-maroon) !important;
-}
-
-/* Class Diagram */
-.protyle-wysiwyg [data-subtype="mermaid"] .classBreadcrumb {
-  fill: var(--ctp-mocha-mauve) !important;
-}
-
-.protyle-wysiwyg [data-subtype="mermaid"] .edgeTerminals {
-  fill: var(--ctp-mocha-text) !important;
-}
-
-/* User Journey */
-.protyle-wysiwyg [data-subtype="mermaid"] .face {
-  fill: var(--ctp-mocha-yellow) !important;
-  stroke: var(--ctp-mocha-peach) !important;
 }

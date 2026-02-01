@@ -1,0 +1,258 @@
+/* SiYuan Mermaid Diagram Styles */
+
+/* Mocha / Default */
+.protyle-wysiwyg [data-subtype="mermaid"] svg {
+  background-color: transparent;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] text,
+.protyle-wysiwyg [data-subtype="mermaid"] .label,
+.protyle-wysiwyg [data-subtype="mermaid"] .node label,
+.protyle-wysiwyg [data-subtype="mermaid"] .edgeLabel,
+.protyle-wysiwyg [data-subtype="mermaid"] .loopText,
+.protyle-wysiwyg [data-subtype="mermaid"] .messageText,
+.protyle-wysiwyg [data-subtype="mermaid"] .noteText,
+.protyle-wysiwyg [data-subtype="mermaid"] .taskText,
+.protyle-wysiwyg [data-subtype="mermaid"] .sectionTitle,
+.protyle-wysiwyg [data-subtype="mermaid"] .classText {
+  fill: var(--ctp-mocha-text);
+  color: var(--ctp-mocha-text);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .node rect,
+.protyle-wysiwyg [data-subtype="mermaid"] .node circle,
+.protyle-wysiwyg [data-subtype="mermaid"] .node ellipse,
+.protyle-wysiwyg [data-subtype="mermaid"] .node polygon,
+.protyle-wysiwyg [data-subtype="mermaid"] .node path,
+.protyle-wysiwyg [data-subtype="mermaid"] .cluster rect {
+  fill: var(--ctp-mocha-surface0);
+  stroke: var(--ctp-mocha-lavender);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .actor {
+  stroke: var(--ctp-mocha-lavender);
+  fill: var(--ctp-mocha-surface0);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .actor-line {
+  stroke: var(--ctp-mocha-overlay0);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .messageLine0,
+.protyle-wysiwyg [data-subtype="mermaid"] .messageLine1,
+.protyle-wysiwyg [data-subtype="mermaid"] .flowchart-link {
+  stroke: var(--ctp-mocha-text);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] #arrowhead,
+.protyle-wysiwyg [data-subtype="mermaid"] .arrowheadPath,
+.protyle-wysiwyg [data-subtype="mermaid"] .marker.arrowhead,
+.protyle-wysiwyg [data-subtype="mermaid"] .marker.main {
+  fill: var(--ctp-mocha-text);
+  stroke: var(--ctp-mocha-text);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .loopLine {
+  stroke: var(--ctp-mocha-lavender);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .labelBox {
+  stroke: var(--ctp-mocha-lavender);
+  fill: var(--ctp-mocha-surface0);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .note {
+  fill: var(--ctp-mocha-yellow);
+  stroke: var(--ctp-mocha-peach);
+  fill-opacity: 0.3;
+}
+
+/* Gantt Chart */
+.protyle-wysiwyg [data-subtype="mermaid"] .task {
+  stroke: var(--ctp-mocha-surface2);
+  fill: var(--ctp-mocha-surface1);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .task0,
+.protyle-wysiwyg [data-subtype="mermaid"] .task1,
+.protyle-wysiwyg [data-subtype="mermaid"] .task2,
+.protyle-wysiwyg [data-subtype="mermaid"] .task3 {
+  fill: var(--ctp-mocha-surface1);
+  stroke: var(--ctp-mocha-surface2);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .active0,
+.protyle-wysiwyg [data-subtype="mermaid"] .active1,
+.protyle-wysiwyg [data-subtype="mermaid"] .active2,
+.protyle-wysiwyg [data-subtype="mermaid"] .active3 {
+  fill: var(--ctp-mocha-mauve);
+  stroke: var(--ctp-mocha-lavender);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .done0,
+.protyle-wysiwyg [data-subtype="mermaid"] .done1,
+.protyle-wysiwyg [data-subtype="mermaid"] .done2,
+.protyle-wysiwyg [data-subtype="mermaid"] .done3 {
+  fill: var(--ctp-mocha-green);
+  stroke: var(--ctp-mocha-teal);
+  fill-opacity: 0.5;
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .crit0,
+.protyle-wysiwyg [data-subtype="mermaid"] .crit1,
+.protyle-wysiwyg [data-subtype="mermaid"] .crit2,
+.protyle-wysiwyg [data-subtype="mermaid"] .crit3 {
+  fill: var(--ctp-mocha-red);
+  stroke: var(--ctp-mocha-maroon);
+}
+
+/* Class Diagram */
+.protyle-wysiwyg [data-subtype="mermaid"] .classBreadcrumb {
+  fill: var(--ctp-mocha-mauve);
+}
+
+.protyle-wysiwyg [data-subtype="mermaid"] .edgeTerminals {
+  fill: var(--ctp-mocha-text);
+}
+
+/* User Journey */
+.protyle-wysiwyg [data-subtype="mermaid"] .face {
+  fill: var(--ctp-mocha-yellow);
+  stroke: var(--ctp-mocha-peach);
+}
+
+/* Light mode overrides */
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] text,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .label,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node label,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .edgeLabel,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .loopText,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .messageText,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .noteText,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .taskText,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .sectionTitle,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .classText {
+  fill: var(--ctp-latte-text);
+  color: var(--ctp-latte-text);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node rect,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .node
+  circle,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .node
+  ellipse,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .node
+  polygon,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .node path,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .cluster
+  rect {
+  fill: var(--ctp-latte-surface0);
+  stroke: var(--ctp-latte-lavender);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .actor {
+  stroke: var(--ctp-latte-lavender);
+  fill: var(--ctp-latte-surface0);
+}
+
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .actor-line {
+  stroke: var(--ctp-latte-overlay0);
+}
+
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .messageLine0,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .messageLine1,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .flowchart-link {
+  stroke: var(--ctp-latte-text);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] #arrowhead,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .arrowheadPath,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .marker.arrowhead,
+[data-theme-mode="light"]
+  .protyle-wysiwyg
+  [data-subtype="mermaid"]
+  .marker.main {
+  fill: var(--ctp-latte-text);
+  stroke: var(--ctp-latte-text);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .loopLine {
+  stroke: var(--ctp-latte-lavender);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .labelBox {
+  stroke: var(--ctp-latte-lavender);
+  fill: var(--ctp-latte-surface0);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .note {
+  fill: var(--ctp-latte-yellow);
+  stroke: var(--ctp-latte-peach);
+  fill-opacity: 0.3;
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .task {
+  stroke: var(--ctp-latte-surface2);
+  fill: var(--ctp-latte-surface1);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active0,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active1,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active2,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .active3 {
+  fill: var(--ctp-latte-mauve);
+  stroke: var(--ctp-latte-lavender);
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done0,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done1,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done2,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .done3 {
+  fill: var(--ctp-latte-green);
+  stroke: var(--ctp-latte-teal);
+  fill-opacity: 0.5;
+}
+
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit0,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit1,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit2,
+[data-theme-mode="light"] .protyle-wysiwyg [data-subtype="mermaid"] .crit3 {
+  fill: var(--ctp-latte-red);
+  stroke: var(--ctp-latte-maroon);
+}
